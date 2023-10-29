@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario SAT</title>
+</head>
+<body>
+    <h1>Formulario SAT</h1>
+    <form action="" class="declara" id="contact_form">
+ 
+        <ul>
+            <li>
+                <span class="required notification"> *Agregue sus datos*</span>
+            </li>
+            <br>
+            <li>
+                <label for="nombre">Nombre(s)</label><br>
+                <input type="text" name="nombre" pattern="[A-Za-z]" required>
+            </li>
+            <br>
+            <li>
+                <label for="apellido">Apellido(s)</label><br>
+                <input type="text" name="nombre" pattern="[A-Za-z]" required>
+            </li><br>
+            <li>
+                <label for="rfc">RFC</label>
+                <input type="text" name="rfc" pattern="[A-Za-z].{10,}" placeholder="10 A 13 caracteres" maxlength="13" required/>
+            </li>
+            <br>
+            <li>
+                <label for="periodo">Mes</label><br>
+                <select name="periodo" required>
+                    <option value="">Opci&oacute;n</option>
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                </select>
+            </li>
+            <br>
+            <li>
+                <label for="fecha">Fecha de su Cita</label><br>
+                <input type="date" name="fecha" minlength="2023-10-25" value="<?php echo('Y-M-D');?>" maxlength="10">
+            </li> <br>          
+            <li>
+                <label for="correo">Correo</label><br>
+                <input type="text" name="correo" pattern="[A-Za-z]" required>
+            </li>
+            <br>
+            <li>
+                <label for="telefono">Telefono</label><br>
+                <input type="number" name="telefono">
+            </li>
+            <br>
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+ 
+        </ul>
+    </form>
+</body>
+</html>

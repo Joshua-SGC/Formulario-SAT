@@ -1,0 +1,117 @@
+*:focus{outline: none;}
+ 
+/*------------------*/
+body{
+    font: 14px/21px Arial;
+    color: #420068;
+    background: #20d838;
+}
+ 
+.declara h2, .declara label{
+    font-family: 'Courier New', Courier, monospace
+}
+ 
+.required_notifications{font-size: 8px;}
+ 
+.declara ul{
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0; padding: 0;
+}
+ 
+.declara li{
+    padding: 12px;
+    border-bottom: 1px solid #202252;
+    position: relative;
+}
+ 
+.declara li :first-child,
+.declara li :last-child{
+    border-bottom: 1px solid #eeff52;
+}
+ 
+.declara h2{
+    margin: 0; display: inline;
+}
+ 
+.required_notifications{
+    color: #d45252;
+    margin: 5px 0,0,0; display: inline;
+}
+ 
+.declara label{
+    width: 150px; margin-top: 3px; display: inline-block;
+    float: left;
+    padding: 3px;
+}
+ 
+.declara button{
+    margin-left: 156px;
+}
+ 
+.declara input{
+    height: 20px; width: 220px; padding: 5px 8px;
+    border: 1px solid #f8d137;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+}
+ 
+.declara input:focus{
+    background: #791212;
+    border: 1px solid rgb(0, 122, 0);
+    box-shadow: 0 0 3px #0ff;
+    padding-right: 70px;
+}
+
+.form_right{
+    background: #d45252;
+    border-radius: 3px;
+    color: red;
+    margin-left: 8px;
+    padding: 1px 6px;
+    z-index: 999;
+    position: absolute;
+}
+
+.form_hint::before{
+    color: #d45252;
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+
+.declara input:focus + .form_hint{
+    display: inline;
+}
+
+.declara input:required:valid + .form_hint{
+    background:  green;
+}
+
+.declara input:required:valid + .form_hint{
+    background:  green;
+}
+
+button.submit{
+    background: green;
+    background: linear-gradient(top, green, rgb(112, 204, 112));
+    border: 1px solid rgb(19, 175, 19);
+    border-radius: 3px;
+    box-shadow: inset 0 1px 00 green;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -px 0 green;
+}
+
+button.submit:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+
+button.submit:active{
+    box-shadow: 0 0 1px 5px greenyellow;
+}
